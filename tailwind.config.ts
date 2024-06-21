@@ -12,11 +12,15 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        custom: "linear-gradient(to right top, black, transparent)",
       },
     },
     colors: {
       mainBgGrey: "#272727",
       colorWhite: "white",
+      logoColor: "#0A21C0",
+      navTextColor: "#B3B4BD",
+      colorBlack: "black",
     },
   },
   plugins: [],
