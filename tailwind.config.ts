@@ -16,6 +16,7 @@ const config: Config = {
     },
     colors: {
       mainBgGrey: "#272727",
+      colorWhite: "white",
     },
   },
   plugins: [],
