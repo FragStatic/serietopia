@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -63,9 +65,30 @@ export default function Home() {
             ASD
           </button>
         </div>
-        <div className="latest w-full">
-          <div className="list-title border h-16 w-full">Latest releases</div>
-          <div className="list border h-80 w-full"></div>
+        <div className="w-full">
+          <div className="flex list-title border h-16 w-full px-24">
+            <span className="self-end text-3xl">Latest releases</span>
+          </div>
+          <div className="flex overflow-scroll flex-col flex-wrap border h-80 pl-24 no-scrollbar">
+            <div className=" h-full w-64 border mr-4 rounded-lg">
+              <Image
+                src={
+                  "https://m.media-amazon.com/images/M/MV5BMzhkNzVkNDYtNmE2Zi00ZTk1LTk2OWYtOTU5NWM5OWQ2Zjc0XkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_SX300.jpg"
+                }
+                width={300}
+                height={375}
+                alt="/noImage.jpg"
+                className="rounded-lg"
+              />
+            </div>
+            <div className=" h-full w-64 border mr-4 "></div>
+            <div className=" h-full w-64 border mr-4 "></div>
+            <div className=" h-full w-64 border mr-4 "></div>
+            <div className=" h-full w-64 border mr-4 "></div>
+            <div className=" h-full w-64 border mr-4 "></div>
+            <div className=" h-full w-64 border mr-4 "></div>
+            <div className=" h-full w-64 border mr-4 "></div>
+          </div>
         </div>
         <div className="popular w-full">
           <div className="list-title border h-16 w-full"></div>
