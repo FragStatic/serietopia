@@ -14,6 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         custom: "linear-gradient(to right top, black, transparent)",
       },
+      height: {
+        "88": "22rem",
+      },
     },
     colors: {
       mainBgGrey: "#272727",
@@ -21,6 +24,7 @@ const config: Config = {
       logoColor: "#0A21C0",
       navTextColor: "#B3B4BD",
       colorBlack: "black",
+      colorBlackWithOpacity: "rgba(0, 0, 0, 0.6)",
     },
   },
   plugins: [],
