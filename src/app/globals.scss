@@ -29,4 +29,16 @@
     -ms-overflow-style: none; /*IE and Edge */
     scrollbar-width: none; /* FireFox */
   }
+  *:has(> .visible-on-parent-hover):not(:hover) > .visible-on-parent-hover {
+    opacity: 0;
+  }
+  *:has(> * > .show-card-details-on-grandparent-hover):has(:hover)
+    > *
+    > .show-card-details-on-grandparent-hover {
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+    transform: translateY(100%);
+    position: absolute;
+    top: -3.5rem;
+  }
 }
